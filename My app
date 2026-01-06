@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>تطبيقي الأول</title>
+</head>
+<body>
+
+  <h2>مرحبا بك</h2>
+
+  <input id="query" placeholder="كتب شي كلمة" />
+  <button onclick="show()">عرض</button>
+
+  <p id="out"></p>
+
+  <script>
+    function show() {
+      const q = document.getElementById("query").value;
+
+      if (q === "") {
+        alert("خاصك تكتب شي حاجة");
+        return;
+      }
+
+      document.getElementById("out").innerText =
+        "كتبت: " + q;
+    }
+  </script>
+
+</body>
+</html>
